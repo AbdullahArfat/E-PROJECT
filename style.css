@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-item{
+    transition: all 1s ease;
+}
+.nav-item :hover{
+    transform: scale(0.7);
+    background-color: rgb(159, 159, 172);
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.5s;
+}
+
+#hero{
+    width: 100%;
+    height: 400px;
+    background-image: url(./images/1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation-name: abc;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+@keyframes abc{
+    25%{
+        background-image: url(/images/1.png);
+    }
+    60%{
+        background-image: url(/images/2.png);
+    }
+    85%{
+        background-image: url(/images/3.png);
+    }
+}
+
+.inner{
+    overflow: hidden;
+}
+
+.inner img{
+    transition: all 1s ease;
+}
+.inner :hover{
+    transform: scale(0.5);
+}
+
+/* footer work */
+/* footer a:hover{
+    background-color: gray;
+} */
+
